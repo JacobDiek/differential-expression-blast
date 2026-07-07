@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Virtual environment
+venv/
+env/
+*.egg-info/
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# Large raw data files
+*.fasta
+*.out.tab
+*.gff
+*.csv
+
+# Results
+results/
+significant_genes.txt
+genes_input.json
+
+# VS Code
+.vscode/
+
+# OS junk
+.DS_Store
