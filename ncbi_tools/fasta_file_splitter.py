@@ -2,9 +2,9 @@ import os
 
 from Bio import SeqIO
 
-input_file = "ncbi_unknown.fasta"
+input_file = "ncbi_unknown_filter.fasta"
 max_bases_per_chunk = 1_000_000
-max_seqs_per_chunk = 5
+max_seqs_per_chunk = 30
 output_dir = "ncbi_files_to_run"
 output_prefix = "unknown_chunk"
 

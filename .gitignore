@@ -19,11 +19,13 @@ env/
 *.out.tab
 *.gff
 *.csv
+*.xml
 
 # Results
 results/
 significant_genes.txt
 genes_input.json
+ncbi_files_*/
 
 # VS Code
 .vscode/
