@@ -43,17 +43,17 @@ def annotate_top_genes(sig_csv_path, gff_path, top_n=30, rank_by="padj", output_
     return annotated
 
 
-# Liver male vs. liver female — rank by padj (values aren't saturated at 0 here)
+# Liver male vs. liver female — rank by padj
 liver_top = annotate_top_genes(
     sig_csv_path="/Users/jacobdiek/Coding/projects/differential-expression-blast/R/significant_genes_liver_male_vs_liver_female.csv",
     gff_path="/Users/jacobdiek/Coding/projects/differential-expression-blast/brook_genome/brook_genome_hap1.gff",
     top_n=100,
-    rank_by="padj",
+    rank_by="abs_log2fc",
     output_path="annotated_top_liver_male_vs_liver_female.csv",
 )
 print(liver_top)
 
-# Testes vs. ovary — rank by |log2FC| since many padj values are saturated at 0
+# Testes vs. ovary — rank by |log2FC|
 gonad_top = annotate_top_genes(
     sig_csv_path="/Users/jacobdiek/Coding/projects/differential-expression-blast/R/significant_genes_testes_vs_ovary.csv",
     gff_path="/Users/jacobdiek/Coding/projects/differential-expression-blast/brook_genome/brook_genome_hap1.gff",

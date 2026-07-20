@@ -1,5 +1,5 @@
-from automatic_entry_blast import automatic_entry_blast
-from manual_entry_blast import manual_entry_blast
+from core.automatic_entry_blast import automatic_entry_blast
+from core.manual_entry_blast import manual_entry_blast
 
 
 def main():

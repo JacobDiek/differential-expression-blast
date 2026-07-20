@@ -18,9 +18,15 @@ def ncbi_mass_parser(input_dir, output_dir):
         tree = ET.parse(full_file_path)
         root = tree.getroot()
 
-        file_path = parsed_file_location / f"blast_output_{file}.txt"
+        query_def = root.findtext(".//Iteration_query-def")
+        if not query_def:
+            print(f"WARNING: no Iteration_query-def found in {file}, falling back to filename")
+            query_def = file
+
+        file_path = parsed_file_location / f"blast_output_{query_def}.txt"
 
         with open(file_path, "w", encoding="utf-8") as f:
+            f.write(f"Query: {query_def}\n\n")
             for hit in root.iter("Hit"):
                 hit_num = hit.findtext("./Hit_num")
                 hit_id = hit.findtext("./Hit_id")
