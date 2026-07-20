@@ -63,6 +63,13 @@ def sanitize_filename(name, max_length=100):
     return name[:max_length]
 
 
+def extract_locus_tag(input_filename):
+    name = os.path.splitext(input_filename)[0]
+    if name.startswith("blast_output_"):
+        name = name[len("blast_output_"):]
+    return name
+
+
 def gene_identifier(input_dir, output_dir):
     os.makedirs(output_dir, exist_ok=True)
 
@@ -80,9 +87,9 @@ def gene_identifier(input_dir, output_dir):
         with open(input_file_path, 'r', errors="replace") as f:
             lines = [line.rstrip("\n") for line in f]
 
-        all_hit_defs = lines[2::5]
+        all_hit_defs = lines[4::5]
 
-        locus_tag = os.path.splitext(input_file)[0]
+        locus_tag = extract_locus_tag(input_file)
 
         file_hits = []
         file_flags = []
@@ -104,7 +111,7 @@ def gene_identifier(input_dir, output_dir):
         if len(file_flags) * 3 > len(file_hits):
             output_filename = f"UNKNOWN_{sanitize_filename(locus_tag)}.txt"
             output_content = (
-                f"Original file: {locus_tag}\n"
+                f"Locus tag: {locus_tag}\n"
                 f"Status: Unknown Gene\n"
                 f"Flagged hits ({len(file_flags)}): {sorted(set(file_flags))}\n"
                 f"Informative hits ({len(file_hits)}): {sorted(set(file_hits))}\n"
@@ -114,7 +121,7 @@ def gene_identifier(input_dir, output_dir):
             top_hit = unique_hits[0] if unique_hits else "unnamed"
             output_filename = f"{sanitize_filename(top_hit)}_{sanitize_filename(locus_tag)}.txt"
             output_content = (
-                f"Original file: {locus_tag}\n"
+                f"Locus tag: {locus_tag}\n"
                 f"Status: Identified\n"
                 f"Hits: {unique_hits}\n"
             )
