@@ -97,7 +97,7 @@ def gene_identifier(input_dir, output_dir):
             individual_hit = Hit(hit_def=line)
             normalized_hit = individual_hit.normalized_name
             
-            # Skip genomic noise entirely
+            # Skip genomic noise
             if any(noise in normalized_hit for noise in genomic_noise):
                 continue
                 
@@ -119,7 +119,7 @@ def gene_identifier(input_dir, output_dir):
         else:
             unique_hits = sorted(set(file_hits))
             top_hit = unique_hits[0] if unique_hits else "unnamed"
-            output_filename = f"{sanitize_filename(top_hit)}_{sanitize_filename(locus_tag)}.txt"
+            output_filename = f"{sanitize_filename(top_hit)}.txt"
             output_content = (
                 f"Locus tag: {locus_tag}\n"
                 f"Status: Identified\n"

@@ -18,14 +18,15 @@ env/
 *.fasta
 *.out.tab
 *.gff
-*.csv
 *.xml
 
 # Results
+final_results/
 results/
 significant_genes.txt
 genes_input.json
 ncbi_files_*/
+R/25030-01-final-QC-summary.csv
 
 # VS Code
 .vscode/

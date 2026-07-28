@@ -41,7 +41,6 @@ dds <- DESeqDataSetFromMatrix(countData = cts,
                               design = ~ tissue)
 dds <- DESeq(dds)
 
-# PCA-based outlier check — inspect the plot and sample labels, then
 # set outlier_sample below and re-run from here if needed
 
 vsd <- vst(dds, blind = TRUE)
@@ -92,3 +91,153 @@ for (comparison_name in names(contrasts_to_run)) {
 }
 
 print(sig_gene_counts)
+
+# Plot making
+
+library("DESeq2")
+library("ashr")
+library("ggplot2")
+library("ggrepel")
+
+# Genes of interest to label on volcano plots, by comparison
+genes_of_interest_liver <- c(
+  egapxtmp_003028 = "estrogen receptor 1",
+  egapxtmp_025941 = "vitellogenin-2-like",
+  egapxtmp_027432 = "vitellogenin 3",
+  egapxtmp_018468 = "zona pellucida 3-like",
+  egapxtmp_004929 = "zona pellucida 3-like",
+  egapxtmp_028631 = "nothepsin",
+  egapxtmp_009392 = "cytosolic sulfotransferase 3-like"
+)
+
+genes_of_interest_gonad <- c(
+  egapxtmp_033296 = "insulin-like 3",
+  egapxtmp_015645 = "cyp11c1",
+  egapxtmp_014751 = "SUN domain-containing 3-like",
+  egapxtmp_002091 = "claudin-3-like",
+  egapxtmp_033281 = "zona pellucida 3-like",
+  egapxtmp_031446 = "high choriolytic enzyme 1",
+  egapxtmp_018019 = "protein Bouncer-like"
+)
+
+make_volcano_plot <- function(res_df, genes_of_interest, title, padj_cutoff = 0.05, lfc_cutoff = 1) {
+  
+  res_df$significant <- !is.na(res_df$padj) &
+    res_df$padj < padj_cutoff &
+    abs(res_df$log2FoldChange) > lfc_cutoff
+  
+  res_df$label <- genes_of_interest[res_df$gene_id]
+  
+  ggplot(res_df, aes(x = log2FoldChange, y = -log10(padj))) +
+    geom_point(aes(color = significant), alpha = 0.4, size = 1) +
+    scale_color_manual(values = c("FALSE" = "grey70", "TRUE" = "firebrick")) +
+    geom_vline(xintercept = c(-lfc_cutoff, lfc_cutoff), linetype = "dashed", color = "grey40") +
+    geom_hline(yintercept = -log10(padj_cutoff), linetype = "dashed", color = "grey40") +
+    geom_point(data = subset(res_df, !is.na(label)), color = "blue", size = 2) +
+    geom_text_repel(data = subset(res_df, !is.na(label)), aes(label = label),
+                    size = 3.5, max.overlaps = Inf, box.padding = 0.5) +
+    labs(title = title, x = "log2 fold change", y = "-log10 adjusted p-value") +
+    theme_minimal() +
+    theme(legend.position = "none")
+}
+
+make_ma_plot <- function(shrunk_res, title) {
+  res_df <- as.data.frame(shrunk_res)
+  res_df$significant <- !is.na(res_df$padj) & res_df$padj < 0.05 & abs(res_df$log2FoldChange) > 1
+  
+  ggplot(res_df, aes(x = log10(baseMean + 1), y = log2FoldChange)) +
+    geom_point(aes(color = significant), alpha = 0.4, size = 1) +
+    scale_color_manual(values = c("FALSE" = "grey70", "TRUE" = "firebrick")) +
+    geom_hline(yintercept = 0, linetype = "dashed", color = "grey40") +
+    labs(title = title, x = "log10 mean expression", y = "shrunken log2 fold change") +
+    theme_minimal() +
+    theme(legend.position = "none")
+}
+
+# --- Testes vs. Ovary ---
+
+res_gonad <- results(dds, contrast = c("tissue", "testes", "ovary"))
+res_gonad_df <- as.data.frame(res_gonad)
+res_gonad_df$gene_id <- rownames(res_gonad_df)
+
+volcano_gonad <- make_volcano_plot(res_gonad_df, genes_of_interest_gonad, "Testes vs. Ovary")
+ggsave("volcano_testes_vs_ovary.png", volcano_gonad, width = 7, height = 6, dpi = 300)
+
+shrunk_gonad <- lfcShrink(dds, contrast = c("tissue", "testes", "ovary"), type = "ashr")
+ma_gonad <- make_ma_plot(shrunk_gonad, "Testes vs. Ovary")
+ggsave("ma_testes_vs_ovary.png", ma_gonad, width = 7, height = 6, dpi = 300)
+
+# --- Liver Male vs. Liver Female ---
+
+res_liver <- results(dds, contrast = c("tissue", "liver_male", "liver_female"))
+res_liver_df <- as.data.frame(res_liver)
+res_liver_df$gene_id <- rownames(res_liver_df)
+
+volcano_liver <- make_volcano_plot(res_liver_df, genes_of_interest_liver, "Liver: Male vs. Female")
+ggsave("volcano_liver_male_vs_liver_female.png", volcano_liver, width = 7, height = 6, dpi = 300)
+
+shrunk_liver <- lfcShrink(dds, contrast = c("tissue", "liver_male", "liver_female"), type = "ashr")
+ma_liver <- make_ma_plot(shrunk_liver, "Liver: Male vs. Female")
+ggsave("ma_liver_male_vs_liver_female.png", ma_liver, width = 7, height = 6, dpi = 300)
+
+
+# AmhY egapxtmp_015627
+# Wt1b egapxtmp_013970
+# Cyp19a1a egapxtmp_013395
+# gsdf egapxtmp_030606
+
+wt1b_data <- plotCounts(dds,
+                        gene = "egapxtmp_013970",
+                        intgroup = "tissue",
+                        transform = TRUE,
+                        normalized = FALSE,
+                        returnData = FALSE,
+                        main = "Wt1b")
+
+gsdf_data <- plotCounts(dds,
+                        gene = "egapxtmp_030606",
+                        intgroup = "tissue",
+                        transform = TRUE,
+                        normalized = FALSE,
+                        returnData = FALSE,
+                        main = "Gsdf")
+
+cyp19a1a_data <- plotCounts(dds,
+                            gene = "egapxtmp_013395",
+                            intgroup = "tissue",
+                            transform = TRUE,
+                            normalized = FALSE,
+                            returnData = FALSE,
+                            main = "Cyp19a1a")
+
+amhy_data <- plotCounts(dds,
+                            gene = "egapxtmp_015627",
+                            intgroup = "tissue",
+                            transform = TRUE,
+                            normalized = FALSE,
+                            returnData = FALSE,
+                            main = "AmhY")
+
+# === Correlation testing ===
+
+genes_of_interest <- c("egapxtmp_015627",
+                       "egapxtmp_013970",
+                       "egapxtmp_013395",
+                       "egapxtmp_030606")
+
+norm_counts <- counts(dds, normalized = TRUE)
+sub_counts <- norm_counts[genes_of_interest, ]
+rownames(sub_counts) <- c("AmhY", "Wt1b", "Cyp19a1a", "Gsdf")
+
+# Correlation across all samples
+cor(t(sub_counts), method = "pearson")
+
+# Correlation within testes only
+testes_samples <- rownames(coldata)[coldata$tissue == "testes"]
+sub_counts_testes <- sub_counts[, testes_samples]
+cor(t(sub_counts_testes), method = "pearson")
+
+# Correlation within ovary only
+ovary_samples <- rownames(coldata)[coldata$tissue == "ovary"]
+sub_counts_ovary <- sub_counts[, ovary_samples]
+cor(t(sub_counts_ovary), method = "pearson")
