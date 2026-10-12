@@ -13,23 +13,17 @@ env/
 .Rhistory
 .RData
 .Rproj.user/
+Rplots.pdf
 
-# Large raw data files
-*.fasta
-*.out.tab
-*.gff
-*.xml
-
-# Results
-final_results/
-results/
-significant_genes.txt
-genes_input.json
-ncbi_files_*/
-R/25030-01-final-QC-summary.csv
+# Data and results (too large for git, share separately)
+/data/
+/results/
 
 # VS Code
 .vscode/
 
 # OS junk
 .DS_Store
+
+# Output from running the pipeline on the test dataset
+tests/data/output/

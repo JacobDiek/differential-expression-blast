@@ -10,7 +10,8 @@ def parse_attributes(attr_string):
     return d
 
 
-def make_gff_genes():
+def read_gff_genes(gff_path):
+    # Every "gene" row of the GFF, with its attributes split into columns
     gff_columns = [
         "seqid",
         "source",
@@ -24,7 +25,7 @@ def make_gff_genes():
     ]
 
     df = pd.read_csv(
-        "brook_genome/brook_genome_hap1.gff",
+        gff_path,
         sep="\t",
         comment="#",
         header=None,
@@ -36,12 +37,21 @@ def make_gff_genes():
     parsed = genes["attributes"].apply(parse_attributes)
     attr_df = pd.DataFrame(list(parsed))
 
-    result = pd.concat(
+    return pd.concat(
         [
             genes[["seqid", "start", "end", "strand"]].reset_index(drop=True),
-            attr_df[["locus_tag"]].reset_index(drop=True),
+            attr_df.reset_index(drop=True),
         ],
         axis=1,
     )
+
+
+def make_gff_genes(gff_path, gene_id_attribute="locus_tag"):
+    # gene_id_attribute is the GFF attribute that holds the gene IDs used in the
+    # count tables (locus_tag for the brook stickleback annotation)
+    genes = read_gff_genes(gff_path)
+
+    result = genes[["seqid", "start", "end", "strand", gene_id_attribute]]
+    result = result.rename(columns={gene_id_attribute: "locus_tag"})
 
     return result

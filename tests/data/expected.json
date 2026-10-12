@@ -1,0 +1,119 @@
+{
+  "significant_genes": [
+    "testgene_0000",
+    "testgene_0001",
+    "testgene_0002",
+    "testgene_0003",
+    "testgene_0004",
+    "testgene_0005",
+    "testgene_0006",
+    "testgene_0007",
+    "testgene_0008",
+    "testgene_0009",
+    "testgene_0010",
+    "testgene_0011",
+    "testgene_0012",
+    "testgene_0013",
+    "testgene_0014",
+    "testgene_0015",
+    "testgene_0016",
+    "testgene_0017",
+    "testgene_0018",
+    "testgene_0019",
+    "testgene_0020",
+    "testgene_0021",
+    "testgene_0022",
+    "testgene_0023",
+    "testgene_0024",
+    "testgene_0025",
+    "testgene_0026",
+    "testgene_0027",
+    "testgene_0028",
+    "testgene_0029"
+  ],
+  "genes_to_blast": [
+    "testgene_0000",
+    "testgene_0001",
+    "testgene_0005",
+    "testgene_0008",
+    "testgene_0009",
+    "testgene_0012",
+    "testgene_0013",
+    "testgene_0016",
+    "testgene_0017",
+    "testgene_0020",
+    "testgene_0021",
+    "testgene_0024",
+    "testgene_0025",
+    "testgene_0028",
+    "testgene_0029"
+  ],
+  "too_long": [
+    "testgene_0004"
+  ],
+  "missing_from_blast": [
+    "testgene_0025"
+  ],
+  "blast": {
+    "testgene_0000": {
+      "status": "identified",
+      "name": "zona pellucida sperm binding protein 4 like"
+    },
+    "testgene_0001": {
+      "status": "identified",
+      "name": "solute carrier family 1 member 2"
+    },
+    "testgene_0005": {
+      "status": "unknown",
+      "name": null
+    },
+    "testgene_0008": {
+      "status": "unknown",
+      "name": null
+    },
+    "testgene_0009": {
+      "status": "unknown",
+      "name": null
+    },
+    "testgene_0012": {
+      "status": "identified",
+      "name": "claudin 4"
+    },
+    "testgene_0013": {
+      "status": "identified",
+      "name": "zona pellucida sperm binding protein 4 like"
+    },
+    "testgene_0016": {
+      "status": "identified",
+      "name": "solute carrier family 1 member 2"
+    },
+    "testgene_0017": {
+      "status": "unknown",
+      "name": null
+    },
+    "testgene_0020": {
+      "status": "unknown",
+      "name": null
+    },
+    "testgene_0021": {
+      "status": "unknown",
+      "name": null
+    },
+    "testgene_0024": {
+      "status": "identified",
+      "name": "claudin 4"
+    },
+    "testgene_0025": {
+      "status": "waiting for BLAST results",
+      "name": null
+    },
+    "testgene_0028": {
+      "status": "identified",
+      "name": "solute carrier family 1 member 2"
+    },
+    "testgene_0029": {
+      "status": "unknown",
+      "name": null
+    }
+  }
+}

@@ -3,14 +3,12 @@ from Bio import SeqIO
 from core.make_gff_genes import make_gff_genes
 
 
-def nucleotide_search(gene_list: list) -> dict:
+def nucleotide_search(gene_list: list, genome_fasta, gff_path, gene_id_attribute="locus_tag") -> dict:
 
-    gff_table = make_gff_genes()
+    gff_table = make_gff_genes(gff_path, gene_id_attribute)
 
     sequence_dict = {}
-    scaffold_dict = SeqIO.to_dict(
-        SeqIO.parse("brook_genome/brook_genome_hap1_v1.fasta", "fasta")
-    )
+    scaffold_dict = SeqIO.to_dict(SeqIO.parse(genome_fasta, "fasta"))
 
     lookup = gff_table.set_index("locus_tag")
     for locus_tag in gene_list:

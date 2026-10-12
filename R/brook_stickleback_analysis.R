@@ -1,15 +1,25 @@
 library("DESeq2")
 library("apeglm")
+library("ashr")
+library("ggplot2")
+library("ggrepel")
+
+# Run from the project root folder, e.g. setwd("path/to/differential-expression-blast")
+# All results (CSVs and plots) are written to results/brook_analysis/
+
+results_dir <- file.path("results", "brook_analysis")
+dir.create(results_dir, recursive = TRUE, showWarnings = FALSE)
 
 # Make cts table
 
-path <- "/Users/jacobdiek/Coding/projects/differential-expression-blast/R/brook_reads_updated"
+path <- file.path("data", "counts", "brook_reads_updated")
 
 files <- list.files(path = path, pattern = "\\.out\\.tab$", full.names = TRUE)
 
 sample_names <- gsub("_S\\d+_L\\d+_ReadsPerGene\\.out\\.tab$", "", basename(files))
 names(files) <- sample_names
 
+# STAR ReadsPerGene column 4 = reverse-stranded counts
 read_star <- function(file) {
   read.table(file, skip = 4, header = FALSE)[, 4]
 }
@@ -22,7 +32,11 @@ colnames(cts) <- sample_names
 
 cts <- cts[rownames(cts) != "MissingGeneID", ]
 
-metadata <- read.csv("/Users/jacobdiek/Coding/projects/differential-expression-blast/R/25030-01-final-QC-summary.csv")
+metadata <- read.csv(file.path("data", "25030-01-final-QC-summary.csv"))
+
+# Line metadata rows up with the count columns by sample name
+metadata <- metadata[match(colnames(cts), metadata$Sample), ]
+stopifnot(identical(metadata$Sample, colnames(cts)))
 
 # Make col data
 
@@ -87,17 +101,12 @@ for (comparison_name in names(contrasts_to_run)) {
   
   sig_gene_counts[[comparison_name]] <- nrow(sig_genes)
   
-  write.csv(sig_genes, paste0("significant_genes_", comparison_name, ".csv"), row.names = FALSE)
+  write.csv(sig_genes, file.path(results_dir, paste0("significant_genes_", comparison_name, ".csv")), row.names = FALSE)
 }
 
 print(sig_gene_counts)
 
 # Plot making
-
-library("DESeq2")
-library("ashr")
-library("ggplot2")
-library("ggrepel")
 
 # Genes of interest to label on volcano plots, by comparison
 genes_of_interest_liver <- c(
@@ -161,11 +170,11 @@ res_gonad_df <- as.data.frame(res_gonad)
 res_gonad_df$gene_id <- rownames(res_gonad_df)
 
 volcano_gonad <- make_volcano_plot(res_gonad_df, genes_of_interest_gonad, "Testes vs. Ovary")
-ggsave("volcano_testes_vs_ovary.png", volcano_gonad, width = 7, height = 6, dpi = 300)
+ggsave(file.path(results_dir, "volcano_testes_vs_ovary.png"), volcano_gonad, width = 7, height = 6, dpi = 300)
 
 shrunk_gonad <- lfcShrink(dds, contrast = c("tissue", "testes", "ovary"), type = "ashr")
 ma_gonad <- make_ma_plot(shrunk_gonad, "Testes vs. Ovary")
-ggsave("ma_testes_vs_ovary.png", ma_gonad, width = 7, height = 6, dpi = 300)
+ggsave(file.path(results_dir, "ma_testes_vs_ovary.png"), ma_gonad, width = 7, height = 6, dpi = 300)
 
 # --- Liver Male vs. Liver Female ---
 
@@ -174,11 +183,11 @@ res_liver_df <- as.data.frame(res_liver)
 res_liver_df$gene_id <- rownames(res_liver_df)
 
 volcano_liver <- make_volcano_plot(res_liver_df, genes_of_interest_liver, "Liver: Male vs. Female")
-ggsave("volcano_liver_male_vs_liver_female.png", volcano_liver, width = 7, height = 6, dpi = 300)
+ggsave(file.path(results_dir, "volcano_liver_male_vs_liver_female.png"), volcano_liver, width = 7, height = 6, dpi = 300)
 
 shrunk_liver <- lfcShrink(dds, contrast = c("tissue", "liver_male", "liver_female"), type = "ashr")
 ma_liver <- make_ma_plot(shrunk_liver, "Liver: Male vs. Female")
-ggsave("ma_liver_male_vs_liver_female.png", ma_liver, width = 7, height = 6, dpi = 300)
+ggsave(file.path(results_dir, "ma_liver_male_vs_liver_female.png"), ma_liver, width = 7, height = 6, dpi = 300)
 
 
 # AmhY egapxtmp_015627

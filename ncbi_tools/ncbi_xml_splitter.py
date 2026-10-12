@@ -2,9 +2,14 @@ import os
 import xml.etree.ElementTree as ET
 
 
-def split_blast_xml(input_dir, output_dir, split_tag="Iteration"):
+def split_blast_xml(input_dir, output_dir, split_tag="Iteration", skip_already_split=False):
     os.makedirs(output_dir, exist_ok=True)
     input_xml_dir = os.listdir(input_dir)
+
+    # Names of XML files that already have split output, so reruns only split new downloads
+    already_split = set()
+    if skip_already_split:
+        already_split = {name.split(f"_{split_tag}_")[0] for name in os.listdir(output_dir)}
 
     count = 0
     failed_files = []
@@ -15,6 +20,8 @@ def split_blast_xml(input_dir, output_dir, split_tag="Iteration"):
 
         file_path = os.path.join(input_dir, file)
         base_name = os.path.splitext(file)[0]
+        if base_name in already_split:
+            continue
 
         try:
             context = ET.iterparse(file_path, events=("start", "end"))
@@ -42,6 +49,3 @@ def split_blast_xml(input_dir, output_dir, split_tag="Iteration"):
     print(f"Split into {count} files in {output_dir}")
     if failed_files:
         print(f"Failed files ({len(failed_files)}): {failed_files}")
-
-split_blast_xml(input_dir='/Users/jacobdiek/Coding/projects/differential-expression-blast/ncbi_files_results/ncbi_files_large_alignment', 
-                output_dir='/Users/jacobdiek/Coding/projects/differential-expression-blast/ncbi_files_results/ncbi_files_raw_output')

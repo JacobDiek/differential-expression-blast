@@ -37,6 +37,3 @@ def ncbi_mass_parser(input_dir, output_dir):
                 f.write(f"{hit_id}\n")
                 f.write(f"{hit_def}\n")
                 f.write(f"Evalue: {hsp_evalue}\n\n")
-
-ncbi_mass_parser(input_dir='/Users/jacobdiek/Coding/projects/differential-expression-blast/ncbi_files_results/ncbi_files_raw_output',
-                 output_dir='/Users/jacobdiek/Coding/projects/differential-expression-blast/ncbi_files_results/ncbi_files_parsed_output')

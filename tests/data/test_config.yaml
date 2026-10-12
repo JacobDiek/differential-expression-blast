@@ -1,0 +1,23 @@
+# Config for the synthetic test dataset (made by tests/make_test_data.py).
+# Try the pipeline on it with: python run_pipeline.py tests/data/test_config.yaml
+genome_fasta: genome.fasta
+genome_gff: genome.gff
+counts_dir: counts
+sample_sheet: samples.csv
+output_dir: output
+
+gene_id_attribute: locus_tag
+star_count_column: auto
+exclude_samples:
+  - sampleT4
+contrasts:
+  - [treated, control]
+padj_cutoff: 0.05
+log2fc_cutoff: 1
+
+unknown_name_patterns:
+  - "^LOC\\d+$"
+blast_biotypes: []
+max_gene_length: 5000
+chunk_max_bases: 1000000
+chunk_max_seqs: 5
