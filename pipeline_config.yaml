@@ -1,0 +1,46 @@
+# Settings for run_pipeline.py. Paths are relative to this file.
+
+# --- Input files ---
+genome_fasta: data/brook_genome/brook_genome_hap1_v1.fasta
+genome_gff: data/brook_genome/brook_genome_hap1.gff
+counts_dir: data/counts/brook_reads_updated    # STAR *ReadsPerGene.out.tab files
+sample_sheet: data/samples.csv                 # columns: sample, condition
+
+# All output goes here
+output_dir: results
+
+# GFF gene attribute that holds the gene IDs used in the count tables
+gene_id_attribute: locus_tag
+
+# Which STAR ReadsPerGene column to use: 2 = unstranded, 3 = forward, 4 = reverse stranded,
+# or auto to detect it from the count files (a wrong number gets a warning either way)
+star_count_column: 4
+
+# --- DESeq2 ---
+# Samples to leave out (e.g. outliers on results/deseq2/pca.png)
+exclude_samples:
+  - 25030R-01-02
+
+# Comparisons as [condition, reference]; positive log2FC = higher in the first condition
+contrasts:
+  - [testes, ovary]
+  - [liver_male, liver_female]
+
+padj_cutoff: 0.05
+log2fc_cutoff: 1
+
+# --- Which genes to BLAST ---
+# Significant genes are BLASTed if they have no real name in the GFF: Name is missing,
+# equal to the gene ID, or matches one of these patterns
+unknown_name_patterns:
+  - "^LOC\\d+$"
+
+# Only BLAST these gene_biotype values, e.g. [protein_coding]. Empty = all biotypes
+blast_biotypes: []
+
+# Genes longer than this (bp) are not BLASTed
+max_gene_length: 20000
+
+# Size limits for each chunk file uploaded to NCBI BLAST
+chunk_max_bases: 1000000
+chunk_max_seqs: 30

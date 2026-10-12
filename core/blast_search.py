@@ -2,18 +2,20 @@ from pathlib import Path
 from time import sleep
 
 from Bio import Blast
-from Bio.Seq import Seq
 
 
-def blast_search(email: str, gene_list: dict, file_location: Path):
+def blast_search(email: str, gene_list: dict, file_location: Path, database="core_nt", megablast=True):
+    # Same database and program as the NCBI website defaults used for the bulk BLAST step
     Blast.email = email
     raw_file_location = file_location / "raw_results"
 
     for gene in gene_list:
-        nucleotide_string = Seq(gene_list[gene])
+        # FASTA header so the results are labeled with the gene name
+        query = f">{gene}\n{gene_list[gene]}\n"
 
-        print("Submitting BLAST search...")
-        result_stream = Blast.qblast("blastn", "nt", nucleotide_string)
+        print(f"Submitting BLAST search for {gene} (usually takes a minute or two)...")
+        # NCBI's URL API expects MEGABLAST=on
+        result_stream = Blast.qblast("blastn", database, query, megablast="on" if megablast else None)
         print("Search complete, saving results...")
 
         file_name = f"blast_{gene}.xml"

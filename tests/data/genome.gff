@@ -1,0 +1,121 @@
+##gff-version 3
+scaffold_1	Test	gene	301	737	.	+	.	ID=gene-testgene_0000;Name=testgene_0000;gene_biotype=protein_coding;locus_tag=testgene_0000
+scaffold_1	Test	gene	1038	1665	.	-	.	ID=gene-testgene_0001;Name=LOC100001;description=uncharacterized protein LOC100001;gene_biotype=protein_coding;locus_tag=testgene_0001
+scaffold_1	Test	gene	1966	2660	.	+	.	ID=gene-testgene_0002;Name=tg2;description=test protein 2%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0002
+scaffold_1	Test	gene	2961	3523	.	-	.	ID=gene-testgene_0003;Name=tg3;description=test protein 3%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0003
+scaffold_1	Test	gene	3824	9823	.	+	.	ID=gene-testgene_0004;Name=testgene_0004;gene_biotype=lncRNA;locus_tag=testgene_0004
+scaffold_1	Test	gene	10124	10638	.	-	.	ID=gene-testgene_0005;Name=LOC100005;description=uncharacterized protein LOC100005;gene_biotype=protein_coding;locus_tag=testgene_0005
+scaffold_1	Test	gene	10939	11350	.	+	.	ID=gene-testgene_0006;Name=tg6;description=test protein 6%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0006
+scaffold_1	Test	gene	11651	12178	.	-	.	ID=gene-testgene_0007;Name=tg7;description=test protein 7%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0007
+scaffold_1	Test	gene	12479	13132	.	+	.	ID=gene-testgene_0008;Name=testgene_0008;gene_biotype=protein_coding;locus_tag=testgene_0008
+scaffold_1	Test	gene	13433	13881	.	-	.	ID=gene-testgene_0009;Name=LOC100009;description=uncharacterized protein LOC100009;gene_biotype=protein_coding;locus_tag=testgene_0009
+scaffold_1	Test	gene	14182	14804	.	+	.	ID=gene-testgene_0010;Name=tg10;description=test protein 10%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0010
+scaffold_1	Test	gene	15105	15686	.	-	.	ID=gene-testgene_0011;Name=tg11;description=test protein 11%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0011
+scaffold_1	Test	gene	15987	16696	.	+	.	ID=gene-testgene_0012;Name=testgene_0012;gene_biotype=lncRNA;locus_tag=testgene_0012
+scaffold_1	Test	gene	16997	17521	.	-	.	ID=gene-testgene_0013;Name=LOC100013;description=uncharacterized protein LOC100013;gene_biotype=protein_coding;locus_tag=testgene_0013
+scaffold_1	Test	gene	17822	18472	.	+	.	ID=gene-testgene_0014;Name=tg14;description=test protein 14%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0014
+scaffold_1	Test	gene	18773	19592	.	-	.	ID=gene-testgene_0015;Name=tg15;description=test protein 15%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0015
+scaffold_1	Test	gene	19893	20776	.	+	.	ID=gene-testgene_0016;Name=testgene_0016;gene_biotype=protein_coding;locus_tag=testgene_0016
+scaffold_1	Test	gene	21077	21596	.	-	.	ID=gene-testgene_0017;Name=LOC100017;description=uncharacterized protein LOC100017;gene_biotype=protein_coding;locus_tag=testgene_0017
+scaffold_1	Test	gene	21897	22488	.	+	.	ID=gene-testgene_0018;Name=tg18;description=test protein 18%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0018
+scaffold_1	Test	gene	22789	23201	.	-	.	ID=gene-testgene_0019;Name=tg19;description=test protein 19%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0019
+scaffold_1	Test	gene	23502	24227	.	+	.	ID=gene-testgene_0020;Name=testgene_0020;gene_biotype=lncRNA;locus_tag=testgene_0020
+scaffold_1	Test	gene	24528	25291	.	-	.	ID=gene-testgene_0021;Name=LOC100021;description=uncharacterized protein LOC100021;gene_biotype=protein_coding;locus_tag=testgene_0021
+scaffold_1	Test	gene	25592	26353	.	+	.	ID=gene-testgene_0022;Name=tg22;description=test protein 22%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0022
+scaffold_1	Test	gene	26654	27218	.	-	.	ID=gene-testgene_0023;Name=tg23;description=test protein 23%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0023
+scaffold_1	Test	gene	27519	28019	.	+	.	ID=gene-testgene_0024;Name=testgene_0024;gene_biotype=protein_coding;locus_tag=testgene_0024
+scaffold_1	Test	gene	28320	28964	.	-	.	ID=gene-testgene_0025;Name=LOC100025;description=uncharacterized protein LOC100025;gene_biotype=protein_coding;locus_tag=testgene_0025
+scaffold_1	Test	gene	29265	29780	.	+	.	ID=gene-testgene_0026;Name=tg26;description=test protein 26%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0026
+scaffold_1	Test	gene	30081	30676	.	-	.	ID=gene-testgene_0027;Name=tg27;description=test protein 27%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0027
+scaffold_1	Test	gene	30977	31753	.	+	.	ID=gene-testgene_0028;Name=testgene_0028;gene_biotype=lncRNA;locus_tag=testgene_0028
+scaffold_1	Test	gene	32054	32792	.	-	.	ID=gene-testgene_0029;Name=LOC100029;description=uncharacterized protein LOC100029;gene_biotype=protein_coding;locus_tag=testgene_0029
+scaffold_1	Test	gene	33093	33790	.	+	.	ID=gene-testgene_0030;Name=tg30;description=test protein 30%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0030
+scaffold_1	Test	gene	34091	34707	.	-	.	ID=gene-testgene_0031;Name=tg31;description=test protein 31%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0031
+scaffold_1	Test	gene	35008	35833	.	+	.	ID=gene-testgene_0032;Name=testgene_0032;gene_biotype=protein_coding;locus_tag=testgene_0032
+scaffold_1	Test	gene	36134	36712	.	-	.	ID=gene-testgene_0033;Name=LOC100033;description=uncharacterized protein LOC100033;gene_biotype=protein_coding;locus_tag=testgene_0033
+scaffold_1	Test	gene	37013	37640	.	+	.	ID=gene-testgene_0034;Name=tg34;description=test protein 34%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0034
+scaffold_1	Test	gene	37941	38773	.	-	.	ID=gene-testgene_0035;Name=tg35;description=test protein 35%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0035
+scaffold_1	Test	gene	39074	39953	.	+	.	ID=gene-testgene_0036;Name=testgene_0036;gene_biotype=lncRNA;locus_tag=testgene_0036
+scaffold_1	Test	gene	40254	40938	.	-	.	ID=gene-testgene_0037;Name=LOC100037;description=uncharacterized protein LOC100037;gene_biotype=protein_coding;locus_tag=testgene_0037
+scaffold_1	Test	gene	41239	41952	.	+	.	ID=gene-testgene_0038;Name=tg38;description=test protein 38%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0038
+scaffold_1	Test	gene	42253	42872	.	-	.	ID=gene-testgene_0039;Name=tg39;description=test protein 39%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0039
+scaffold_2	Test	gene	301	1197	.	+	.	ID=gene-testgene_0040;Name=testgene_0040;gene_biotype=protein_coding;locus_tag=testgene_0040
+scaffold_2	Test	gene	1498	2010	.	-	.	ID=gene-testgene_0041;Name=LOC100041;description=uncharacterized protein LOC100041;gene_biotype=protein_coding;locus_tag=testgene_0041
+scaffold_2	Test	gene	2311	2843	.	+	.	ID=gene-testgene_0042;Name=tg42;description=test protein 42%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0042
+scaffold_2	Test	gene	3144	3734	.	-	.	ID=gene-testgene_0043;Name=tg43;description=test protein 43%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0043
+scaffold_2	Test	gene	4035	4797	.	+	.	ID=gene-testgene_0044;Name=testgene_0044;gene_biotype=lncRNA;locus_tag=testgene_0044
+scaffold_2	Test	gene	5098	5567	.	-	.	ID=gene-testgene_0045;Name=LOC100045;description=uncharacterized protein LOC100045;gene_biotype=protein_coding;locus_tag=testgene_0045
+scaffold_2	Test	gene	5868	6301	.	+	.	ID=gene-testgene_0046;Name=tg46;description=test protein 46%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0046
+scaffold_2	Test	gene	6602	7063	.	-	.	ID=gene-testgene_0047;Name=tg47;description=test protein 47%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0047
+scaffold_2	Test	gene	7364	7789	.	+	.	ID=gene-testgene_0048;Name=testgene_0048;gene_biotype=protein_coding;locus_tag=testgene_0048
+scaffold_2	Test	gene	8090	8889	.	-	.	ID=gene-testgene_0049;Name=LOC100049;description=uncharacterized protein LOC100049;gene_biotype=protein_coding;locus_tag=testgene_0049
+scaffold_2	Test	gene	9190	9847	.	+	.	ID=gene-testgene_0050;Name=tg50;description=test protein 50%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0050
+scaffold_2	Test	gene	10148	10836	.	-	.	ID=gene-testgene_0051;Name=tg51;description=test protein 51%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0051
+scaffold_2	Test	gene	11137	12008	.	+	.	ID=gene-testgene_0052;Name=testgene_0052;gene_biotype=lncRNA;locus_tag=testgene_0052
+scaffold_2	Test	gene	12309	12837	.	-	.	ID=gene-testgene_0053;Name=LOC100053;description=uncharacterized protein LOC100053;gene_biotype=protein_coding;locus_tag=testgene_0053
+scaffold_2	Test	gene	13138	13687	.	+	.	ID=gene-testgene_0054;Name=tg54;description=test protein 54%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0054
+scaffold_2	Test	gene	13988	14773	.	-	.	ID=gene-testgene_0055;Name=tg55;description=test protein 55%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0055
+scaffold_2	Test	gene	15074	15905	.	+	.	ID=gene-testgene_0056;Name=testgene_0056;gene_biotype=protein_coding;locus_tag=testgene_0056
+scaffold_2	Test	gene	16206	16826	.	-	.	ID=gene-testgene_0057;Name=LOC100057;description=uncharacterized protein LOC100057;gene_biotype=protein_coding;locus_tag=testgene_0057
+scaffold_2	Test	gene	17127	17584	.	+	.	ID=gene-testgene_0058;Name=tg58;description=test protein 58%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0058
+scaffold_2	Test	gene	17885	18465	.	-	.	ID=gene-testgene_0059;Name=tg59;description=test protein 59%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0059
+scaffold_2	Test	gene	18766	19312	.	+	.	ID=gene-testgene_0060;Name=testgene_0060;gene_biotype=lncRNA;locus_tag=testgene_0060
+scaffold_2	Test	gene	19613	20175	.	-	.	ID=gene-testgene_0061;Name=LOC100061;description=uncharacterized protein LOC100061;gene_biotype=protein_coding;locus_tag=testgene_0061
+scaffold_2	Test	gene	20476	20973	.	+	.	ID=gene-testgene_0062;Name=tg62;description=test protein 62%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0062
+scaffold_2	Test	gene	21274	21977	.	-	.	ID=gene-testgene_0063;Name=tg63;description=test protein 63%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0063
+scaffold_2	Test	gene	22278	22730	.	+	.	ID=gene-testgene_0064;Name=testgene_0064;gene_biotype=protein_coding;locus_tag=testgene_0064
+scaffold_2	Test	gene	23031	23874	.	-	.	ID=gene-testgene_0065;Name=LOC100065;description=uncharacterized protein LOC100065;gene_biotype=protein_coding;locus_tag=testgene_0065
+scaffold_2	Test	gene	24175	24591	.	+	.	ID=gene-testgene_0066;Name=tg66;description=test protein 66%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0066
+scaffold_2	Test	gene	24892	25374	.	-	.	ID=gene-testgene_0067;Name=tg67;description=test protein 67%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0067
+scaffold_2	Test	gene	25675	26445	.	+	.	ID=gene-testgene_0068;Name=testgene_0068;gene_biotype=lncRNA;locus_tag=testgene_0068
+scaffold_2	Test	gene	26746	27160	.	-	.	ID=gene-testgene_0069;Name=LOC100069;description=uncharacterized protein LOC100069;gene_biotype=protein_coding;locus_tag=testgene_0069
+scaffold_2	Test	gene	27461	28114	.	+	.	ID=gene-testgene_0070;Name=tg70;description=test protein 70%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0070
+scaffold_2	Test	gene	28415	29079	.	-	.	ID=gene-testgene_0071;Name=tg71;description=test protein 71%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0071
+scaffold_2	Test	gene	29380	29994	.	+	.	ID=gene-testgene_0072;Name=testgene_0072;gene_biotype=protein_coding;locus_tag=testgene_0072
+scaffold_2	Test	gene	30295	31035	.	-	.	ID=gene-testgene_0073;Name=LOC100073;description=uncharacterized protein LOC100073;gene_biotype=protein_coding;locus_tag=testgene_0073
+scaffold_2	Test	gene	31336	31934	.	+	.	ID=gene-testgene_0074;Name=tg74;description=test protein 74%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0074
+scaffold_2	Test	gene	32235	32882	.	-	.	ID=gene-testgene_0075;Name=tg75;description=test protein 75%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0075
+scaffold_2	Test	gene	33183	34074	.	+	.	ID=gene-testgene_0076;Name=testgene_0076;gene_biotype=lncRNA;locus_tag=testgene_0076
+scaffold_2	Test	gene	34375	35014	.	-	.	ID=gene-testgene_0077;Name=LOC100077;description=uncharacterized protein LOC100077;gene_biotype=protein_coding;locus_tag=testgene_0077
+scaffold_2	Test	gene	35315	36125	.	+	.	ID=gene-testgene_0078;Name=tg78;description=test protein 78%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0078
+scaffold_2	Test	gene	36426	37271	.	-	.	ID=gene-testgene_0079;Name=tg79;description=test protein 79%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0079
+scaffold_3	Test	gene	301	1119	.	+	.	ID=gene-testgene_0080;Name=testgene_0080;gene_biotype=protein_coding;locus_tag=testgene_0080
+scaffold_3	Test	gene	1420	2065	.	-	.	ID=gene-testgene_0081;Name=LOC100081;description=uncharacterized protein LOC100081;gene_biotype=protein_coding;locus_tag=testgene_0081
+scaffold_3	Test	gene	2366	3054	.	+	.	ID=gene-testgene_0082;Name=tg82;description=test protein 82%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0082
+scaffold_3	Test	gene	3355	3945	.	-	.	ID=gene-testgene_0083;Name=tg83;description=test protein 83%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0083
+scaffold_3	Test	gene	4246	4873	.	+	.	ID=gene-testgene_0084;Name=testgene_0084;gene_biotype=lncRNA;locus_tag=testgene_0084
+scaffold_3	Test	gene	5174	5784	.	-	.	ID=gene-testgene_0085;Name=LOC100085;description=uncharacterized protein LOC100085;gene_biotype=protein_coding;locus_tag=testgene_0085
+scaffold_3	Test	gene	6085	6837	.	+	.	ID=gene-testgene_0086;Name=tg86;description=test protein 86%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0086
+scaffold_3	Test	gene	7138	7973	.	-	.	ID=gene-testgene_0087;Name=tg87;description=test protein 87%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0087
+scaffold_3	Test	gene	8274	9050	.	+	.	ID=gene-testgene_0088;Name=testgene_0088;gene_biotype=protein_coding;locus_tag=testgene_0088
+scaffold_3	Test	gene	9351	10000	.	-	.	ID=gene-testgene_0089;Name=LOC100089;description=uncharacterized protein LOC100089;gene_biotype=protein_coding;locus_tag=testgene_0089
+scaffold_3	Test	gene	10301	10872	.	+	.	ID=gene-testgene_0090;Name=tg90;description=test protein 90%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0090
+scaffold_3	Test	gene	11173	11584	.	-	.	ID=gene-testgene_0091;Name=tg91;description=test protein 91%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0091
+scaffold_3	Test	gene	11885	12472	.	+	.	ID=gene-testgene_0092;Name=testgene_0092;gene_biotype=lncRNA;locus_tag=testgene_0092
+scaffold_3	Test	gene	12773	13654	.	-	.	ID=gene-testgene_0093;Name=LOC100093;description=uncharacterized protein LOC100093;gene_biotype=protein_coding;locus_tag=testgene_0093
+scaffold_3	Test	gene	13955	14619	.	+	.	ID=gene-testgene_0094;Name=tg94;description=test protein 94%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0094
+scaffold_3	Test	gene	14920	15353	.	-	.	ID=gene-testgene_0095;Name=tg95;description=test protein 95%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0095
+scaffold_3	Test	gene	15654	16322	.	+	.	ID=gene-testgene_0096;Name=testgene_0096;gene_biotype=protein_coding;locus_tag=testgene_0096
+scaffold_3	Test	gene	16623	17351	.	-	.	ID=gene-testgene_0097;Name=LOC100097;description=uncharacterized protein LOC100097;gene_biotype=protein_coding;locus_tag=testgene_0097
+scaffold_3	Test	gene	17652	18140	.	+	.	ID=gene-testgene_0098;Name=tg98;description=test protein 98%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0098
+scaffold_3	Test	gene	18441	19268	.	-	.	ID=gene-testgene_0099;Name=tg99;description=test protein 99%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0099
+scaffold_3	Test	gene	19569	20407	.	+	.	ID=gene-testgene_0100;Name=testgene_0100;gene_biotype=lncRNA;locus_tag=testgene_0100
+scaffold_3	Test	gene	20708	21358	.	-	.	ID=gene-testgene_0101;Name=LOC100101;description=uncharacterized protein LOC100101;gene_biotype=protein_coding;locus_tag=testgene_0101
+scaffold_3	Test	gene	21659	22521	.	+	.	ID=gene-testgene_0102;Name=tg102;description=test protein 102%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0102
+scaffold_3	Test	gene	22822	23716	.	-	.	ID=gene-testgene_0103;Name=tg103;description=test protein 103%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0103
+scaffold_3	Test	gene	24017	24454	.	+	.	ID=gene-testgene_0104;Name=testgene_0104;gene_biotype=protein_coding;locus_tag=testgene_0104
+scaffold_3	Test	gene	24755	25387	.	-	.	ID=gene-testgene_0105;Name=LOC100105;description=uncharacterized protein LOC100105;gene_biotype=protein_coding;locus_tag=testgene_0105
+scaffold_3	Test	gene	25688	26346	.	+	.	ID=gene-testgene_0106;Name=tg106;description=test protein 106%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0106
+scaffold_3	Test	gene	26647	27322	.	-	.	ID=gene-testgene_0107;Name=tg107;description=test protein 107%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0107
+scaffold_3	Test	gene	27623	28459	.	+	.	ID=gene-testgene_0108;Name=testgene_0108;gene_biotype=lncRNA;locus_tag=testgene_0108
+scaffold_3	Test	gene	28760	29489	.	-	.	ID=gene-testgene_0109;Name=LOC100109;description=uncharacterized protein LOC100109;gene_biotype=protein_coding;locus_tag=testgene_0109
+scaffold_3	Test	gene	29790	30571	.	+	.	ID=gene-testgene_0110;Name=tg110;description=test protein 110%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0110
+scaffold_3	Test	gene	30872	31450	.	-	.	ID=gene-testgene_0111;Name=tg111;description=test protein 111%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0111
+scaffold_3	Test	gene	31751	32442	.	+	.	ID=gene-testgene_0112;Name=testgene_0112;gene_biotype=protein_coding;locus_tag=testgene_0112
+scaffold_3	Test	gene	32743	33354	.	-	.	ID=gene-testgene_0113;Name=LOC100113;description=uncharacterized protein LOC100113;gene_biotype=protein_coding;locus_tag=testgene_0113
+scaffold_3	Test	gene	33655	34109	.	+	.	ID=gene-testgene_0114;Name=tg114;description=test protein 114%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0114
+scaffold_3	Test	gene	34410	34993	.	-	.	ID=gene-testgene_0115;Name=tg115;description=test protein 115%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0115
+scaffold_3	Test	gene	35294	35996	.	+	.	ID=gene-testgene_0116;Name=testgene_0116;gene_biotype=lncRNA;locus_tag=testgene_0116
+scaffold_3	Test	gene	36297	36988	.	-	.	ID=gene-testgene_0117;Name=LOC100117;description=uncharacterized protein LOC100117;gene_biotype=protein_coding;locus_tag=testgene_0117
+scaffold_3	Test	gene	37289	37717	.	+	.	ID=gene-testgene_0118;Name=tg118;description=test protein 118%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0118
+scaffold_3	Test	gene	38018	38520	.	-	.	ID=gene-testgene_0119;Name=tg119;description=test protein 119%2C made up;gene_biotype=protein_coding;locus_tag=testgene_0119

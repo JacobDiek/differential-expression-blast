@@ -1,0 +1,519 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastn</BlastOutput_program>
+  <BlastOutput_version>BLASTN 2.17.0+</BlastOutput_version>
+  <BlastOutput_db>core_nt</BlastOutput_db>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-def>testgene_0000</Iteration_query-def>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|1|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Pungitius pungitius titin-like (LOC01), mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>0</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|2|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Pungitius pungitius zona pellucida sperm-binding protein 4-like (LOC02), mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-148</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|3|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Larimichthys crocea zona pellucida sperm-binding protein 4-like (LOC03), mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-147</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|4|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Oryzias latipes zona pellucida sperm-binding protein 4-like (LOC04), mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-146</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|5|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Danio rerio zona pellucida sperm-binding protein 4-like (LOC05), mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-145</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|6|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Esox lucius zona pellucida sperm-binding protein 4-like (LOC06), mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-144</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+</Iteration_hits>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>2</Iteration_iter-num>
+  <Iteration_query-def>testgene_0001</Iteration_query-def>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|1|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Gasterosteus aculeatus solute carrier family 1 member 2 (slc1a2), transcript variant X0, mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-120</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|2|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Pungitius pungitius solute carrier family 1 member 2 (slc1a2), transcript variant X1, mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-119</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|3|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Larimichthys crocea solute carrier family 1 member 2 (slc1a2), transcript variant X2, mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-118</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|4|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Oryzias latipes solute carrier family 1 member 2 (slc1a2), transcript variant X3, mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-117</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|5|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Danio rerio solute carrier family 1 member 2 (slc1a2), transcript variant X4, mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-116</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|6|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Esox lucius solute carrier family 1 member 2 (slc1a2), transcript variant X5, mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-115</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+</Iteration_hits>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>3</Iteration_iter-num>
+  <Iteration_query-def>testgene_0005</Iteration_query-def>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|1|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>Gasterosteus aculeatus DNA, chromosome 0, sequence</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-90</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|2|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>Pungitius pungitius DNA, chromosome 1, sequence</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-90</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|3|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>Larimichthys crocea DNA, chromosome 2, sequence</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-90</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|4|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>Danio rerio clone CH211-5, complete sequence</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-80</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|5|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>Esox lucius voucher KU5 ultra-conserved element locus uce-308 genomic sequence</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-70</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+</Iteration_hits>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>4</Iteration_iter-num>
+  <Iteration_query-def>testgene_0008</Iteration_query-def>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|1|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Gasterosteus aculeatus uncharacterized LOC80 (LOC80), ncRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-60</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|2|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Pungitius pungitius uncharacterized LOC81 (LOC81), ncRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-60</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|3|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Larimichthys crocea uncharacterized LOC82 (LOC82), ncRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-60</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|4|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Oryzias latipes uncharacterized LOC83 (LOC83), ncRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-60</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|5|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Danio rerio uncharacterized LOC84 (LOC84), ncRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-60</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|6|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Esox lucius uncharacterized LOC85 (LOC85), ncRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-60</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|7|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Danio rerio keratin 5 (krt5), mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-20</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+</Iteration_hits>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>5</Iteration_iter-num>
+  <Iteration_query-def>testgene_0009</Iteration_query-def>
+<Iteration_hits>
+</Iteration_hits>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>6</Iteration_iter-num>
+  <Iteration_query-def>testgene_0012</Iteration_query-def>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|1|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Seriola lalandi dorsalis claudin-4 (LOC120), mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>0</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|2|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Seriola lalandi dorsalis claudin-4 (LOC121), mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>0</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|3|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Seriola lalandi dorsalis claudin-4 (LOC122), mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>0</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|4|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Gasterosteus aculeatus claudin-4 (cldn4), mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-100</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|5|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Pungitius pungitius claudin-4 (cldn4), mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-100</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|6|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Larimichthys crocea claudin-4 (cldn4), mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-100</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+</Iteration_hits>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>7</Iteration_iter-num>
+  <Iteration_query-def>testgene_0013</Iteration_query-def>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|1|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Pungitius pungitius titin-like (LOC131), mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>0</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|2|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Pungitius pungitius zona pellucida sperm-binding protein 4-like (LOC132), mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-148</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|3|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Larimichthys crocea zona pellucida sperm-binding protein 4-like (LOC133), mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-147</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|4|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Oryzias latipes zona pellucida sperm-binding protein 4-like (LOC134), mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-146</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|5|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Danio rerio zona pellucida sperm-binding protein 4-like (LOC135), mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-145</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|6|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Esox lucius zona pellucida sperm-binding protein 4-like (LOC136), mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-144</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+</Iteration_hits>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>8</Iteration_iter-num>
+  <Iteration_query-def>testgene_0016</Iteration_query-def>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|1|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Gasterosteus aculeatus solute carrier family 1 member 2 (slc1a2), transcript variant X0, mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-120</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|2|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Pungitius pungitius solute carrier family 1 member 2 (slc1a2), transcript variant X1, mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-119</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|3|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Larimichthys crocea solute carrier family 1 member 2 (slc1a2), transcript variant X2, mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-118</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|4|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Oryzias latipes solute carrier family 1 member 2 (slc1a2), transcript variant X3, mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-117</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|5|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Danio rerio solute carrier family 1 member 2 (slc1a2), transcript variant X4, mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-116</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|6|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Esox lucius solute carrier family 1 member 2 (slc1a2), transcript variant X5, mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-115</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+</Iteration_hits>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>9</Iteration_iter-num>
+  <Iteration_query-def>testgene_0017</Iteration_query-def>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|1|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>Gasterosteus aculeatus DNA, chromosome 0, sequence</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-90</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|2|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>Pungitius pungitius DNA, chromosome 1, sequence</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-90</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|3|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>Larimichthys crocea DNA, chromosome 2, sequence</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-90</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|4|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>Danio rerio clone CH211-17, complete sequence</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-80</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|5|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>Esox lucius voucher KU17 ultra-conserved element locus uce-308 genomic sequence</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-70</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+</Iteration_hits>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>10</Iteration_iter-num>
+  <Iteration_query-def>testgene_0020</Iteration_query-def>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|1|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Gasterosteus aculeatus uncharacterized LOC200 (LOC200), ncRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-60</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|2|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Pungitius pungitius uncharacterized LOC201 (LOC201), ncRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-60</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|3|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Larimichthys crocea uncharacterized LOC202 (LOC202), ncRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-60</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|4|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Oryzias latipes uncharacterized LOC203 (LOC203), ncRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-60</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|5|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Danio rerio uncharacterized LOC204 (LOC204), ncRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-60</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|6|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Esox lucius uncharacterized LOC205 (LOC205), ncRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-60</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|7|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Danio rerio keratin 5 (krt5), mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-20</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+</Iteration_hits>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>11</Iteration_iter-num>
+  <Iteration_query-def>testgene_0021</Iteration_query-def>
+<Iteration_hits>
+</Iteration_hits>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>12</Iteration_iter-num>
+  <Iteration_query-def>testgene_0024</Iteration_query-def>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|1|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Seriola lalandi dorsalis claudin-4 (LOC240), mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>0</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|2|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Seriola lalandi dorsalis claudin-4 (LOC241), mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>0</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|3|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Seriola lalandi dorsalis claudin-4 (LOC242), mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>0</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|4|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Gasterosteus aculeatus claudin-4 (cldn4), mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-100</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|5|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Pungitius pungitius claudin-4 (cldn4), mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-100</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|6|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Larimichthys crocea claudin-4 (cldn4), mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-100</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+</Iteration_hits>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>13</Iteration_iter-num>
+  <Iteration_query-def>testgene_0028</Iteration_query-def>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|1|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Gasterosteus aculeatus solute carrier family 1 member 2 (slc1a2), transcript variant X0, mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-120</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|2|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Pungitius pungitius solute carrier family 1 member 2 (slc1a2), transcript variant X1, mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-119</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|3|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Larimichthys crocea solute carrier family 1 member 2 (slc1a2), transcript variant X2, mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-118</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|4|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Oryzias latipes solute carrier family 1 member 2 (slc1a2), transcript variant X3, mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-117</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|5|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Danio rerio solute carrier family 1 member 2 (slc1a2), transcript variant X4, mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-116</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|6|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>PREDICTED: Esox lucius solute carrier family 1 member 2 (slc1a2), transcript variant X5, mRNA</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-115</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+</Iteration_hits>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>14</Iteration_iter-num>
+  <Iteration_query-def>testgene_0029</Iteration_query-def>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|1|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>Gasterosteus aculeatus DNA, chromosome 0, sequence</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-90</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|2|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>Pungitius pungitius DNA, chromosome 1, sequence</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-90</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|3|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>Larimichthys crocea DNA, chromosome 2, sequence</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-90</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|4|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>Danio rerio clone CH211-29, complete sequence</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-80</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|5|ref|XM_TEST.1|</Hit_id>
+  <Hit_def>Esox lucius voucher KU29 ultra-conserved element locus uce-308 genomic sequence</Hit_def>
+  <Hit_hsps><Hsp><Hsp_evalue>1e-70</Hsp_evalue></Hsp></Hit_hsps>
+</Hit>
+</Iteration_hits>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
