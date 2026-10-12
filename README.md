@@ -22,12 +22,23 @@ Final tables end up in `results/final_tables/`: one CSV per comparison, plus `an
 
 ## Setup
 
-You need **Python 3.11+** (tested with 3.14) and **R** (tested with 4.5, from [CRAN](https://cran.r-project.org)) installed. Then, on macOS or Linux:
+You need **Python 3.11+** (tested with 3.14), **R** (tested with 4.5, from [CRAN](https://cran.r-project.org)) and **git** installed.
+
+Download the code:
+
+```bash
+git clone https://github.com/JacobDiek/differential-expression-blast.git
+cd differential-expression-blast
+```
+
+Then, on macOS or Linux:
 
 ```bash
 ./setup.sh
 source venv/bin/activate
 ```
+
+To update to the latest version later, run `git pull` in the same folder.
 
 `setup.sh` does three things:
 
@@ -209,3 +220,7 @@ differential-expression-blast/
 ```
 
 `data/` and `results/` are too large for git (the brook stickleback genome alone is ~1 GB), so they are git-ignored and need to be shared separately.
+
+## License
+
+[MIT](LICENSE): free to use, modify and share, as long as the copyright notice is kept.
