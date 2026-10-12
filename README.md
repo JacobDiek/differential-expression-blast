@@ -209,18 +209,3 @@ differential-expression-blast/
 ```
 
 `data/` and `results/` are too large for git (the brook stickleback genome alone is ~1 GB), so they are git-ignored and need to be shared separately.
-
-## Brook stickleback project
-
-This tool was built for a summer 2026 project annotating sex-biased genes in the brook stickleback. The `results/` folder holds that project's output:
-
-- `final_tables/`: the pipeline's annotated tables for testes vs. ovary and male vs. female liver.
-- `brook_analysis/`: output of `Rscript R/brook_stickleback_analysis.R`, the exploratory analysis. That covers:
-  - the PCA outlier check that led to excluding sample LF2 (`25030R-01-02`);
-  - labeled volcano and MA plots;
-  - count plots and correlations for AmhY, Wt1b, Cyp19a1a and Gsdf.
-
-  It also holds `annotated_top_*.csv`, the top 100 genes per comparison with descriptions filled in by hand from the BLAST results.
-- `ncbi/`: BLAST results for 6,189 genes, from 232 web BLAST searches (core_nt, July 2026).
-  - **How those genes were chosen:** they came from an earlier version of the analysis. That version used the unnamed genes' counts in `data/counts/6.26_missing.genes_counts.tables/`, compared testes against female liver, and kept genes with padj < 0.05.
-  - **What's still missing:** with the final comparisons, `blast_batches/batch_1/` holds the 6,341 unknown significant genes that were never BLASTed. Uploading it would complete the annotation.
